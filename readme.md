@@ -4,50 +4,50 @@
 
 > > > s.length;
 
-> > > 5
+5
 
 > > > s[0];
 
-> > > "h"
+"h"
 
 > > > s.toString();
 
-> > > "hello"
+"hello"
 
 > > > s.valueOf();
 
-> > > "hello"
+"hello"
 
 > > > s.charAt(1);
 
-> > > "e"
+"e"
 
 > > > s.charAt('2');
 
-> > > "l"
+"l"
 
 > > > s.charAt('e');
 
-> > > "h"
+"h"
 
 > > > s.concat(' world!');
 
-> > > "hello world!"
+"hello world!"
 
 > > > s.slice(1,3);
 
-> > > "el"
+"el"
 
 > > > s.slice(0,-1);
 
-> > > "hell"
+"hell"
 
 > > > s.split('e');
 
-> > > ["h", "llo"]
+["h", "llo"]
 
 > > > s.split('l');
 
-> > > ["he", "", "o"]
+["he", "", "o"]
 
 5. Update your MyString() constructor to include a reverse()method.
