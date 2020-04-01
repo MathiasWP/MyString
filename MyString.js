@@ -7,7 +7,7 @@ function MyString(input) {
 
   // Here we create the possibility to call this[3] and actually get the letter + counting the length of the input
   for (const letter of this.string) {
-    this[this.string.indexOf(letter)] = letter;
+    this[this.length] = letter;
     this.length++;
   }
 
@@ -74,11 +74,11 @@ function MyString(input) {
         stored.push(temporary.join(''));
         temporary = [];
       }
+    }
 
-      // If we are at the last letter then we want to add on whatever is left in the temporary array
-      if (this.string.indexOf(letter) === this.length - 1) {
-        stored.push(temporary.join(''));
-      }
+    // Add whatever is left in the temporary array
+    if (temporary.length > 0) {
+      stored.push(temporary.join(''));
     }
 
     return stored;
